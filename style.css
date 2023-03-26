@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Internet Friends Collective</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Carrois+Gothic&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Sono:wght@300&display=swap" rel="stylesheet">
+	<style>
+		.header {
+			font-size: 4rem;
+			text-align: center;
+			font-family: 'Carrois Gothic', sans-serif;
+			font-weight: 400;
+			color: rgb(248, 244, 227);
+		}
+		.title {
+			font-size: 4rem;
+			text-align: center;
+			font-family: 'Carrois Gothic', sans-serif;
+			font-weight: 400;
+			color: rgb(248, 244, 227);
+		}
+		body {
+			font-family: 'Sono', sans-serif;
+			background-color: rgb(90, 83, 83);
+		}
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 2rem;
+		}
+		input[type="email"] {
+			padding: 0.5rem;
+			margin-right: 0.5rem;
+			border-radius: 0.25rem;
+			border: 1px solid #cb97a5;
+			font-size: 1.25rem;
+			width: 20rem;
+			text-align: center;
+			color: #002394;
+			background-color: #fff;
+		}
+		input[type="email"]:focus {
+			border: 1px solid #002394;
+		}
+		button[type="submit"] {
+			padding: 0.5rem 1rem;
+			background-color: #002394;
+			color: #fff;
+			border: none;
+			border-radius: 0.25rem;
+			font-size: 1.25rem;
+			cursor: pointer;
+		}
+		button[type="submit"]:hover {
+			background-color: #00b0d5;
+		}
+	</style>
+</head>
+<body>
+	<header>
+		<div class="header">Internet Friends Collective</div>
+	</header>
+	<main>
+		<form action="https://formspree.io/f/mrgobvzw" method="POST">
+			<input type="email" id="email" name="email" required placeholder="Enter email" autocomplete="off">
+			<button type="submit">Early Access</button>
+		</form>
+	</main>
+</body>
+</html>
